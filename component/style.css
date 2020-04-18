@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myCustomeFont;
+}
+/* Ini mengatur margin bagian dibawah garis biru*/
+.main-web{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+/*ini untuk bagian topbarnya yg biru*/
+.topbar{
+    overflow: hidden;
+    background-color: #709985;
+}
+/*ini untuk mengatur isinya yg biru tapi kosong*/
+.topbar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* This for Chrome custome input to textfield*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+/*this is for Firefox custome input to textfield*/
+input[type=number]{
+    -moz-appearance: textfield;
+    width: 200px;
+    height: 15px;
+    margin-left: 30px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #C4C4C4;
+    padding: 10px 10px;
+    color: white;
+}
+/*ini mengatur btn tambah,kurang,kali,bagi atas*/
+.menuTambah , 
+.menuKurang, 
+.menuKali , 
+.menuBagi{
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    background-color: white;
+    color: white;
+    margin-right: 20px;
+}
+/*ini mengatur btn Tambah*/
+.menuTambah{
+    border: 2px solid #22DBAE;
+    background-color: white;
+    color: #22DBAE;
+}
+/*ini mengatur btn Tambah ketika hover*/
+.menuTambah:hover{
+    border: 2px solid #22DBAE;
+    background-color: #22DBAE;
+    color: white;
+}
+/*ini mengatur btn Kurang*/
+.menuKurang{
+    border: 2px solid #EEBF1A;
+    background-color: white;
+    color: #EEBF1A;
+}
+/*ini mengatur btn Kurang ketika hover*/
+.menuKurang:hover{
+    border: 2px solid #EEBF1A;
+    background-color: #EEBF1A;
+    color: white;
+}
+/*ini mengatur btn Kali*/
+.menuKali{
+    border: 2px solid #78D071;
+    background-color: white;
+    color: #78D071;
+}
+/*ini mengatur btn Kali ketika hover*/
+.menuKali:hover{
+    border: 2px solid #78D071;
+    background-color: #78D071;
+    color: white;
+}
+/*ini mengatur btn Bagi*/
+.menuBagi{
+    border: 2px solid #DE5C54;
+    background-color: white;
+    color: #DE5C54;
+}
+/*ini mengatur btn Bagi ketika hover*/
+.menuBagi:hover{
+    border: 2px solid #DE5C54;
+    background-color: #DE5C54;
+    color: white;
+}
+/*ini untuk mengatur yang bagian button*/
+.btnHasil{
+    height: 40px;
+    width: 100px;
+    border: 2px solid #EE7822;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #EE7822;
+    background-color: white;
+    margin-top: 20px;
+}
+/*ini untuk mengatur yang bagian button waktu di hover*/
+.btnHasil:hover{
+    background-color: #EE7822;
+    color: white;
+}
+/*ini mengatur btn Reset*/
+.btnReset{
+    height: 40px;
+    width: 100px;
+    border: 2px solid #C4C4C4;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #C4C4C4;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*ini mengatur btn Reset ketika hover*/
+.btnReset:hover{
+    border: 2px solid #EE7822;
+    background-color: #EE7822;
+    color: white;
+}
+/*ini untuk bagian hasil perhitungannya*/
+textarea{
+    border-radius: 8px;
+    background-color: #C4C4C4;
+    color: white;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+/*ini untuk bagian tag input*/
+.input{
+    margin-bottom: 30px;
+}
+/* use to custome font*/
+@font-face{
+    font-family: myCustomeFont;
+    src: url(../font/Quantico-Regular.ttf);
+}
+/*ini untuk mengatur bagian kolom hasil*/
+.resultCount{
+    margin-top: 20px;
+}
+/*ini untuk mengatur bagian button menu atasnya*/
+.btn-menu {
+    margin-bottom: 60px;
+}
