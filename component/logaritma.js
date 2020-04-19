@@ -1,3 +1,36 @@
+function kekata(n){
+    var angka=new Array("","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan","sepuluh","sebelas");
+    var terbilang ;
+
+    if(n<12){
+        terbilang = " "+angka[n];
+    }
+    else if(n<20){
+        terbilang = kekata(n-10)+" belas ";
+    }
+    else if(n<100){
+        terbilang = kekata(Math.floor(n/10)) + " puluh "+ kekata(n%10);
+    }
+    else if(n<200){
+        terbilang = " seratus " + kekata(n-100);
+    }
+    else if(n<1000){
+        terbilang = kekata(Math.floor(n/100)) + " ratus "+ kekata(n%100);
+    }
+    else if(n<2000){
+        terbilang = " seribu " + kekata(n-1000);
+    }
+    else if(n<1000000){
+        terbilang = kekata(Math.floor(n/1000)) + " ribu "+ kekata(n%1000);
+    }
+    else if(n<1000000000){
+        terbilang = kekata(Math.floor(n/1000000)) + " juta "+ kekata(n%1000000);
+    }
+    else if(n<1000000000000){
+        terbilang = kekata(Math.floor(n/1000000000)) + " milyar "+ kekata(n%1000000000);
+    }
+    return terbilang;
+}
 function funcTambah(){
     var angka1 = parseInt(document.getElementById("InNumber1").value);
     var angka2 = parseInt(document.getElementById("InNumber2").value);
@@ -15,7 +48,8 @@ function funcTambah(){
         var z = document.getElementById("OutResult").value = "A Number Can't Be Minus";
     }
     else{
-        var z = document.getElementById("OutResult").value = angka1 + angka2;
+        var z = angka1 + angka2;
+        document.getElementById("OutResult").innerHTML=kekata(z);
     }
     
    
@@ -37,7 +71,8 @@ function funcKurang(){
         var z = document.getElementById("OutResult").value = "A Number Can't Be Minus";
     }
     else{
-        var z = document.getElementById("OutResult").value = angka1 - angka2;
+        var z = angka1 - angka2;
+        document.getElementById("OutResult").innerHTML=kekata(z);
     }
     
 }
@@ -58,7 +93,8 @@ function funcKali(){
         var z = document.getElementById("OutResult").value = "A Number Can't Be Minus";
     }
     else{
-        var z = document.getElementById("OutResult").value = angka1 * angka2;
+        var z = angka1 * angka2;
+        document.getElementById("OutResult").innerHTML=kekata(z);
     }
     
 }
@@ -79,7 +115,8 @@ function funcBagi(){
         var z = document.getElementById("OutResult").value = "A Number Can't Be Minus";
     }
     else{
-        var z = document.getElementById("OutResult").value = angka1 / angka2;
+        var z = angka1 / angka2;
+        document.getElementById("OutResult").innerHTML=kekata(z);
     }
 
 }
