@@ -101,22 +101,6 @@ input[type=number]{
     background-color: #DE5C54;
     color: white;
 }
-/*ini untuk mengatur yang bagian button*/
-.btnHasil{
-    height: 40px;
-    width: 100px;
-    border: 2px solid #EE7822;
-    border-radius: 8px;
-    font-size: 15px;
-    color: #EE7822;
-    background-color: white;
-    margin-top: 20px;
-}
-/*ini untuk mengatur yang bagian button waktu di hover*/
-.btnHasil:hover{
-    background-color: #EE7822;
-    color: white;
-}
 /*ini mengatur btn Reset*/
 .btnReset{
     height: 40px;
@@ -159,4 +143,43 @@ textarea{
 /*ini untuk mengatur bagian button menu atasnya*/
 .btn-menu {
     margin-bottom: 60px;
+}
+.profile{
+    float: right;
+    margin-right: 100px;
+    margin-top: -400px;
+    border: 2px solid #EE7822;
+    width: 350px;
+    height: 350px;
+}
+.profile .gambar{
+    width: 180px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile .gambar img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 50%;
+    border: 3px solid #709985;
+}
+.profile .tulisan{
+    width: auto;
+    height: 150px;
+    background-color: #709985;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+.profile .tulisan p{
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
