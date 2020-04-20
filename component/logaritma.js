@@ -50,6 +50,17 @@ function funcTambah(){
     else{
         var z = angka1 + angka2;
         document.getElementById("OutResult").innerHTML=kekata(z);
+        ganjil = z % 2;
+        bilbul = z % 1;
+        if( bilbul == 0){
+            document.getElementById("OutResult").style.backgroundColor="#70D36E";
+        }if(ganjil != 0){
+            document.getElementById("OutResult").style.backgroundColor="#EFF24D";
+        }else if(z == 0){
+            document.getElementById("OutResult").style.backgroundColor="#709985";
+            document.getElementById("OutResult").value="Nol";
+            document.getElementById("OutResult").style.color="#FFFFFF";
+        }
     }
     
    
@@ -73,6 +84,17 @@ function funcKurang(){
     else{
         var z = angka1 - angka2;
         document.getElementById("OutResult").innerHTML=kekata(z);
+        ganjil = z % 2;
+        bilbul = z % 1;
+        if( bilbul == 0){
+            document.getElementById("OutResult").style.backgroundColor="#70D36E";
+        }if(ganjil != 0){
+            document.getElementById("OutResult").style.backgroundColor="#EFF24D";
+        }else if(z == 0){
+            document.getElementById("OutResult").style.backgroundColor="#709985";
+            document.getElementById("OutResult").value="Nol";
+            document.getElementById("OutResult").style.color="#FFFFFF";
+        }
     }
     
 }
@@ -95,6 +117,17 @@ function funcKali(){
     else{
         var z = angka1 * angka2;
         document.getElementById("OutResult").innerHTML=kekata(z);
+        ganjil = z % 2;
+        bilbul = z % 1;
+        if( bilbul == 0){
+            document.getElementById("OutResult").style.backgroundColor="#70D36E";
+        }if(ganjil != 0){
+            document.getElementById("OutResult").style.backgroundColor="#EFF24D";
+        }else if(z == 0){
+            document.getElementById("OutResult").style.backgroundColor="#709985";
+            document.getElementById("OutResult").value="Nol";
+            document.getElementById("OutResult").style.color="#FFFFFF";
+        }
     }
     
 }
@@ -117,12 +150,22 @@ function funcBagi(){
     else{
         var z = angka1 / angka2;
         document.getElementById("OutResult").innerHTML=kekata(z);
+        ganjil = z % 2;
+        bilbul = z % 1;
+        if( bilbul == 0){
+            document.getElementById("OutResult").style.backgroundColor="#70D36E";
+        }if(ganjil != 0){
+            document.getElementById("OutResult").style.backgroundColor="#EFF24D";
+        }else if(z == 0){
+            document.getElementById("OutResult").style.backgroundColor="#709985";
+            document.getElementById("OutResult").value="Nol";
+            document.getElementById("OutResult").style.color="#FFFFFF";
+        }
     }
 
 }
 function resetInput(){
     document.getElementById("myForm").reset();
-
 }
 
 
